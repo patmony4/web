@@ -1,0 +1,963 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    width: 100%;
+    height: 80px;
+    background-color: rgb(248, 248, 248);
+    display: flex;
+    padding: 0px 50px;
+    box-shadow: 0px 0px 10px rgb(128, 128, 128);
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+.header .logo{
+    width: 25%;
+    height: 100%;
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+}
+.header .manu{
+    width: 50%;
+    height: 100%;
+    /* background-color: rgb(175, 28, 138); */
+    display: flex;
+    align-items: center;
+}
+.manu ul{
+    display: flex;
+}
+.manu ul li{
+    list-style-type: none;
+    margin-right: 30px;
+    position: relative;
+}
+.manu ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+#roler::before{
+    content: "";
+    width: 100%;
+    height: 7%;
+    background-color: red;
+    left: 0px;
+}
+.manu ul li a::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: rgb(224, 24, 24);
+    bottom: -5px;
+    right: 50%;
+    transition: all 0.3s;
+}
+.manu ul li a:hover::before{
+    width: 50%;
+    transition: all 0.5s;
+}
+.manu ul li a::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: rgb(201, 17, 17);
+    bottom: -5px;
+    left: 50%;
+    transition: all 0.3s;
+}
+.manu ul li a:hover::after{
+    width: 50%;
+    transition: all 0.5s;
+}
+.header .icons{
+    width: 25%;
+    height: 100%;
+    /* background-color: rgb(247, 48, 48); */
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+.icons ul{
+    display: flex;
+}
+.icons ul li {
+    list-style-type: none;
+    margin-left: 25px;
+    position: relative;
+}
+.icons ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(128, 128, 128);
+}
+.icons ul li i{
+    font-size: 15px;
+}
+.icons ul li span{
+    padding: 1px 6px;
+    background-color: red;
+    position: absolute;
+    top: -9px;
+    left: 10px;
+    font-size: 10px;
+    border-radius: 50%;
+    color: white;
+}
+.image{
+    width: 100%;
+    height: 600px;
+    /* background-color: aqua; */
+    display: flex;
+}
+.image .l{
+    width: 50%;
+    height: 100%;
+    background-color: blue;
+    position: relative;
+}
+.image .l img{
+    width: 100%;
+    height: 101.6%;
+    object-fit: cover;
+    position: absolute;
+}
+.image .l h1{
+    font-family: "Pacifico", cursive;
+    position: absolute;
+    /* background-color: rgb(141, 3, 146); */
+    width: 50%;
+    top: 250px;
+    left: 100px;
+    font-size: 30px;
+}
+.image .l pre{
+    position: absolute;
+    /* background-color: aqua; */
+    width: 100px;
+    top: 300px;
+    left: 100px;
+}
+.image .l h4{
+    position: absolute;
+    /* background-color: aqua; */
+    width: 100px;
+    top: 350px;
+    left: 100px;
+}
+.image .l h4::before{
+    content: "";
+    width: 85px;
+    height: 2px;
+    background-color: red;
+    position: absolute;
+    bottom: -5px;
+}
+.image .r{
+    width: 50%;
+    height: 100%;
+    /* background-color: rgb(30, 165, 97); */
+    position: relative;
+}
+.image .r .top{
+    width: 100%;
+    height: 50%;
+    /* background-color: black;  */
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.image .r .top .pi1{
+    width: 50%;
+    height: 100%;
+    /* background-color: blue; */
+    position: relative;
+}
+.pi1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+.pi1 pre{
+    position: absolute;
+    width: 100px;
+    top: 100px;
+    font-size: 30px;
+    left: 30px;
+}
+.pi1 p{
+    position: absolute;
+    width: 100px;
+    top: 140px;
+    left: 30px;
+}
+.pi1 h4{
+    position: absolute;
+    width: 100px;
+    top: 170px;
+    left: 30px;
+}
+.pi1 h4::before{
+    content: "";
+    position: absolute;
+    width: 85px;
+    height: 2px;
+    background-color: red;
+    bottom: -5px;
+}
+.image .r .top .pi2{
+    width: 49%;
+    height: 100%;
+    /* background-color: rgb(198, 198, 202); */
+    position: relative;
+}
+.pi2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+.pi2 pre{
+    position: absolute;
+    width: 100px;
+    top: 100px;
+    left: 30px;
+    font-size: 30px;
+}
+.pi2 p{
+    position: absolute;
+    width: 100px;
+    top: 140px;
+    left: 30px;
+}
+.pi2 h4{
+    position: absolute;
+    width: 100px;
+    top: 170px;
+    left: 30px;
+}
+.pi2 h4::before{
+    content: "";
+    position: absolute;
+    width: 85px;
+    height: 2px;
+    background-color: red;
+    bottom: -5px;
+}
+.image .r .below{
+    width: 100%;
+    height: 50%;
+    /* background-color: rgb(126, 11, 11); */
+    display: flex;
+    justify-content: space-between;
+}
+.image .r .below .p1{
+    width: 50%;
+    height: 100%;
+    /* background-color: rgb(184, 73, 30); */
+    position: relative;
+}
+.p1 pre{
+    position: absolute;
+    width: 100px;
+    top: 100px;
+    left: 30px;
+    font-size: 30px;
+}
+.p1 p{
+    position: absolute;
+    width: 100px;
+    top: 140px;
+    left: 30px;
+}
+.p1 h4{
+    position: absolute;
+    width: 100px;
+    top: 170px;
+    left: 30px;
+}
+.p1 h4::before{
+    content: "";
+    position: absolute;
+    width: 85px;
+    height: 2px;
+    background-color: red;
+    bottom: -5px;
+}
+.p1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+.image .r .below .p2{
+    width: 49%;
+    height: 100%;
+    /* background-color: rgb(49, 146, 25); */
+    position: relative;
+}
+.p2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+.p2 pre{
+    position: absolute;
+    width: 100px;
+    top: 100px;
+    left: 30px;
+    font-size: 30px;
+}
+.p2 p{
+    position: absolute;
+    width: 100px;
+    top: 140px;
+    left: 30px;
+}
+.p2 h4{
+    position: absolute;
+    width: 100px;
+    top: 170px;
+    left: 30px;
+}
+.p2 h4::before{
+    content: "";
+    position: absolute;
+    width: 85px;
+    height: 2px;
+    background-color: red;
+    bottom: -5px;
+}
+.header1{
+    width: 100%;
+    height: 100px;
+    /* background-color: rgb(194, 35, 35); */
+    margin-top: 30px;
+    display: flex;
+}
+.header1 .le{
+    width: 50%;
+    height: 100%;
+    /* background-color: aqua; */
+    align-items: center;
+    display: flex;
+    
+}
+.header1 .le pre{
+    font-size: 30px;
+    position: relative;
+    margin-left: 430px;
+}
+.header1 .le pre::before{
+    content: "";
+    position: absolute;
+    width: 70px;
+    height: 2px;
+    background-color: red;
+    bottom: 0px;
+}
+.header1 .ri{
+    width: 50%;
+    height: 100%;
+    /* background-color: rgb(14, 172, 14); */
+    align-items: center;
+    display: flex;
+}
+.ri ul{
+    display: flex;
+}
+.ri ul li{
+    list-style-type: none;
+    position: relative;
+    margin-left: 50px;
+}
+.ri ul li a{
+    text-decoration: none;
+    color: black;
+}
+.ri ul li a::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: red;
+    bottom: -5px;
+    right: 50%;
+}
+.ri ul li a::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: red;
+    bottom: -5px;
+    left: 50%;
+}
+.ri ul li a:hover::before{
+    width: 50%;
+    transition: all 0.3s;
+}
+.ri ul li a:hover::after{
+    width: 50%;
+    transition: all 0.3s;
+}
+#w::before{
+    content:"";
+    width: 30px;
+    height: 2px;
+    position: absolute;
+    background-color: red;
+    left: 0;
+    bottom: -5px;
+}
+.pic1{
+    width: 55%;
+    height: 450px;
+    /* background-color: black; */
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.pic1 .b1{
+    width: 24%;
+    height: 100%;
+    background-color: rgb(246, 246, 248);
+    position: relative;
+}
+.pic1 .b1 .Bo{
+    width: 100%;
+    height: 80%;
+    /* background-color: red; */
+    position: relative;
+    overflow: hidden;
+}
+.Bo .web{
+    width: 100%;
+    height:30%;
+    /* background-color: rgb(209, 10, 10); */
+    position: absolute;
+    bottom: -30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Bo:hover .web{
+    bottom: 0;
+    transition: 0.5s;
+}
+.Bo .n1{
+    width:50px;
+    height: 50px;
+    background-color: rgb(243, 238, 239);
+    margin-right: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Bo .web .n1:hover i{
+    transform: rotate(360deg);
+    transition: 0.5s;
+    color: rgb(236, 226, 226);
+}
+.Bo .web .n1:hover{
+    background-color: red;
+}
+.Bo .web .n1 i{
+    font-size: 17px;
+    transition: 0.5s;
+}
+.pic1 .b1 .Bo1{
+    width: 100%;
+    height: 20%;
+    /* background-color: aqua; */
+    text-align: center;
+}
+.Bo1 h5{
+    position: absolute;
+    width: 40px;
+    color: white;
+    height: 30px;
+    top: 18px;
+    background-color: darkgreen;
+    font-size: 15px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.Bo1 h4{
+    width: 60px;
+    height: 30px;
+    background-color: red;
+    font-size: 20px;
+    position: absolute;
+    top: 20px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.Bo1 i{
+    color: yellow;
+    font-size: 10px;
+}
+.Bo1 pre{
+    font-size: 15px;
+    width: 120px;
+    position: absolute;
+    top: 14px;
+    color: white;
+    background-color: rgb(10, 10, 10);
+}
+.b1 .Bo1 img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.Bo .icons-box{
+    width: 100%;
+    height: 30%;
+    background-color: aqua;
+    position: absolute;
+}
+.box{
+    width: 100%;
+    height: 500px;
+    /* background-color: red; */
+    display: flex;
+    margin-top: 30px;
+    position: relative;
+}
+.box .box-mid{
+    position: absolute;
+    width: 20%;
+    height: auto;
+    margin: 0 auto;
+    top: 150px;
+    left: 730px;
+    animation-name: run;
+    animation-duration: 4s;
+    animation-delay: 0.5s;
+    animation-iteration-count: infinite;
+}
+@keyframes run{
+    100%{
+        transform: translateX(-100%);
+        
+    }
+    50%{
+        transform: translateX(0%);
+        /* transition: 0.5s; */
+    }
+    0%{
+        transform: translateX(100%);
+        /* transition: 1s; */
+    }
+}
+.box-mid h1{
+    font-family: "Pacifico", cursive;
+    font-size: 50px;
+    width: 850px;
+    height:20px ;
+    margin-right: 40px;
+}
+.box-mid p{
+    color: red;
+    font-size: 20px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    /* background-color: black; */
+}
+.box-mid h4{
+    margin-top: 90px;
+    font-size: 24px;
+    margin-left: 40%;
+    position: relative;
+}
+.box-mid h4::before{
+    content: "";
+    position: absolute;
+    width: 95px;
+    height: 2px;
+    bottom: -5px;
+    background-color: red;
+}
+.box-mid button{
+    width: 15px;
+    height: 15px;
+    background-color: rgba(128, 128, 128, 0.493);
+    border-radius: 50%;
+    margin-top: 100px;
+    margin-left: 20px;
+}
+.box-mid button:hover{
+    background-color: red;
+}
+.header2{
+    width: 80%;
+    height: 70px;
+    /* background-color: red; */
+    display: flex;
+    margin: 0 auto;
+}
+.header2 .b-lef{
+    width: 33%;
+    height: 100%;
+    margin-top: 30px;
+    /* background-color: aqua; */
+}
+.b-lef h2{
+    width: 300px;
+    height: 40px;
+    font-size: 20px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.b-lef h1{
+    width: 300px;
+    height: 40px;
+    font-size: 20px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.b-lef h3{
+    width: 300px;
+    height: 40px;
+    font-size: 20px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.b-lef h2::before{
+    width: 25%;
+    height: 3px;
+    background-color: red;
+    content: "";
+    left: 90px;
+    position: absolute;
+    bottom: 3px;
+}
+.b-lef h1::before{
+    width: 20%;
+    height: 3px;
+    background-color: red;
+    content: "";
+    left: 100px;
+    position: absolute;
+    bottom: 3px;
+}
+.b-lef h3::before{
+    width: 25%;
+    height: 3px;
+    background-color: red;
+    content: "";
+    left: 80px;
+    position: absolute;
+    bottom: 3px;
+}
+.pic2{
+    width: 71%;
+    height: 170px;
+    /* background-color: red; */
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+.pic2 .box1{
+    width: 30%;
+    height: 100%;
+    /* background-color: aqua; */
+    display: flex;
+}
+.box1 .op1{
+    width: 50%;
+    height: 100%;
+    /* background-color: rgb(156, 106, 31); */
+}
+.op1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.box1 .text{
+    width: 50%;
+    height: 100%;
+    /* background-color: rgb(230, 222, 222); */
+}
+.text p{
+    font-size: 20px;
+    margin-top: 25px;
+}
+.text i{
+    margin-top: 15px;
+    color: yellow;
+}
+.text h3{
+    margin-top: 15px;
+}
+.image1{
+    width: 70%;
+    height: 400px;
+    /* background-color: blue; */
+    margin: 0 auto;
+    margin-top: 90px;
+    display: flex;
+}
+.image1 .date{
+    width: 50%;
+    height: 100%;
+    /* background-color: aqua; */
+}
+.date p{
+    font-size: 20px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    color: rgb(41, 38, 38);
+}
+.date h1{
+    font-size: 50px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    color: red;
+    margin-top: 10px;
+    font-family: "Pacifico", cursive;
+}
+.date h4{
+    font-size: 20px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    color: rgb(41, 38, 38);
+}
+.date h4 pre{
+    color: red;
+    font-size: 30px;
+}
+.date h2{
+    font-size: 30px;
+    margin-top: 50px;
+    margin-left: 70px;
+}
+.date h3{
+    margin-top: 20px;
+    font-size: 25px;
+    margin-left: 280px;
+    position: relative;
+}
+.date h3::before{
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    bottom: -4px;
+    background-color: red;
+}
+.image1 .girl{
+    width: 50%;
+    height: 100%;
+    /* background-color: rgb(110, 16, 24); */
+}
+.girl img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.log{
+    width: 70%;
+    height: 100px;
+    /* background-color: blue; */
+    margin: 0 auto;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.l1{
+    width: 23%;
+    height: 100%;
+    /* background-color: aqua; */
+    display: flex;
+}
+.l1 .pic-logo{
+    width: 40%;
+    height: 100%;
+    /* background-color: rgb(46, 197, 8); */
+}
+.pic-logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.l1 .title-logo{
+    width: 60%;
+    height: 100%;
+    /* background-color: rgb(124, 9, 153); */
+}
+.l1 .title-logo h2{
+    margin-top: 15px;
+}
+.l1 .title-logo p{
+    margin-top: 6px;
+}
+.frist{
+    width: 100%;
+    /* background-color: aqua; */
+    height: 300px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.frist .container{
+    width: 16.3%;
+    height: 100%;
+    background-color: rgb(207, 22, 37);
+    position: relative;
+}
+.frist .container:hover .m1{
+    display: flex;
+    transition: ease-in-out;
+}
+.container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.container .m1{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(238, 237, 240, 0.493);
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    transition: ease-in-out;
+}
+.m1 i{
+    margin-left: 50px;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+.last{
+    width: 60%;
+    height: 200px;
+    /* background-color: rebeccapurple; */
+    margin: 0 auto;
+    justify-content: space-between;
+    display: flex;
+    margin-top: 40px;
+}
+.last .z1{
+    width: 25%;
+    /* background-color: khaki; */
+    height: 100%;
+}
+.z1 .Bi{
+    width: 100%;
+    height: 30%;
+    /* background-color: aqua; */
+}
+.z1 .tit{
+    width: 100%;
+    height: 30%;
+    /* background-color: rgb(160, 17, 112); */
+}
+.z1 .rub{
+    width: 100%;
+    height: 40%;
+    /* background-color: rgb(230, 210, 30); */
+}
+.rub img{
+    margin-top: 20px;
+}
+.last .z2{
+    width: 17%;
+    /* background-color: rgb(31, 5, 100); */
+    height: 100%;
+}
+.z2 ul li{
+    list-style-type: none;
+    margin-top: 10px;
+}
+.z2 ul li a{
+    text-decoration: none;
+    color: gray;
+}
+.last .z3{
+    width: 17%;
+    background-color: rgb(23, 180, 75);
+    height: 100%;
+}
+.last .z4{
+    width: 25%;
+    /* background-color: khaki; */
+    height: 100%;
+}
+.z4 .Bio{
+    width: 100%;
+    height: 30%;
+    /* background-color: blueviolet; */
+}
+.z4 .email{
+    width: 100%;
+    height: 30%;
+    /* background-color: rgb(25, 194, 95); */
+}
+.z4 .logo1{
+    width: 100%;
+    height: 40%;
+    /* background-color: rgba(121, 2, 22, 0.342); */
+    display: flex;
+    justify-content: space-between;
+}
+.logo1 .w1{
+    width: 32%;
+    height: 100%;
+}
+.w1 img{
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+}
+.last .z5{
+    width: 14%;
+    background-color: rgb(175, 18, 18);
+    height: 30%;
+    font-size: 19px;
+    margin-top: 40px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 80%;
+}
+.x1{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
+.x1 i{
+    color: red;
+}
